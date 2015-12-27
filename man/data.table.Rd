@@ -215,8 +215,8 @@ DT[,colNum,with=FALSE]     # same
 
 setkey(DT,x)               # set a 1-column key. No quotes, for convenience.
 setkeyv(DT,"x")            # same (v in setkeyv stands for vector)
-v="x"
-setkeyv(DT,v)              # same
+MyKey <- "x"               # character vector
+setkeyv(DT,MyKey)          # same
 # key(DT)<-"x"             # copies whole table, please use set* functions instead
 
 DT["a"]                    # binary search (fast)
